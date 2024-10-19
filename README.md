@@ -25,9 +25,25 @@ Ce projet implémente un système d'alerte incendie basé sur l'ESP32, avec des 
 - Activation d'un **buzzer** et d'une **LED** pour signaler l'alerte.
 - Support du mode **light sleep** pour l'économie d'énergie (en cours de développement).
 
-## Installation
+## Montage
+Pour la réalisation du montage, nous avons dans un premier temps câblé les composants principaux qui sont le buzzer, la LED rouge, le capteur LM35 et le bouton. Nous avons par la suite ajouté un autre capteur plus précis qui est le BME680.
 
-### 1. Clonez le dépôt
-```bash
-git clone https://github.com/votre-compte/ESP32-Fire-Alert-IoT.git
-cd ESP32-Fire-Alert-IoT
+### Câblage des composants
+- **Alimentation** : Chaque composant est alimenté avec 3,3V et GND.
+- **Capteur LM35** :
+  - Patte du milieu reliée à la pin VP.
+- **Buzzer** :
+  - Relié à la PIN 23.
+- **LED** :
+  - Reliée à la PIN 22.
+- **Bouton** :
+  - Relié à la PIN 21.
+  
+ ## Installation
+
+### Étape 1 : Clonez le dépôt
+1. Ouvrez votre terminal (ou invite de commande).
+2. Exécutez les commandes suivantes pour cloner le projet :
+   ```bash
+   git clone https://github.com/votre-compte/ESP32-Fire-Alert-IoT.git
+   cd ESP32-Fire-Alert-IoT
