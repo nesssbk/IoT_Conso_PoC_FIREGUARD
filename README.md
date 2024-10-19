@@ -25,6 +25,21 @@ Ce projet implémente un système d'alerte incendie basé sur l'ESP32, avec des 
 - Activation d'un **buzzer** et d'une **LED** pour signaler l'alerte.
 - Support du mode **light sleep** pour l'économie d'énergie (en cours de développement).
 
+## Codes du projet
+Le projet se compose de quatre codes principaux :
+- **esp_foret** : Code pour le fonctionnement standard de l'ESP32 (envoi des données).
+- **esp_foret_no_sleep** : Code pour le fonctionnement de l'ESP32 (envoi des données) sans mode light sleep.
+- **esp_tour** : Code pour le fonctionnement standard de l'ESP32 (récéption des données).
+- **esp_tour_no_sleep** : Code pour le fonctionnement de l'ESP32 (récéption des données) sans mode light sleep.
+
+## Montage
+Câblage des composants sur l'ESP32 (avec une plaque à trou):
+Buzzer : Pin 23
+LED : Pin 22
+Bouton : Pin 21
+Capteur LM35 : La patte du milieu reliée à la pin VP
+
+
 ## Installation
 
 ### 1. Clonez le dépôt
